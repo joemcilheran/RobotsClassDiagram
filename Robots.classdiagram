@@ -1,0 +1,894 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e8cd2dc0-cc8b-44c6-a2f0-b8eba80fedcd" name="Robots" linkedPackageId="271df01b-bbb3-431f-a071-cbb102bde373" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="a0ff2e9b-877e-4a4d-8430-a2a08873bb98">
+      <profileInstance Id="e41aa316-bbbd-44f7-9ca7-43185fa45138" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="f6eeefa0-ab39-4f88-ad3c-385085cf5985">
+      <profileInstance Id="c24612b9-896e-4612-97df-5ed5bcec31ae" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="03191e48-ee96-4b21-8d16-ec903d77d78c" name="User" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4d51369e-fc04-42d8-9216-429a18b4f26b" />
+        <targetEnds>
+          <association Id="e248e839-4fca-4feb-ba2d-91520c8d6618" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Weapon" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c0945fae-fce7-433d-a987-c680099a1b6d" LastKnownName="Weapon" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9db234ba-9abe-496b-a1ae-c41b923008ca" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fce2def9-5201-4be4-8021-230e9f446a73" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="82cdc13e-e36b-41b9-ac70-efcbd59a1239" name="Weapon" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f9ff31d5-146c-479d-979a-2f62136c4a3d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="01a3bc14-190b-4c50-aaaf-ba01e69ecd26" />
+          </association>
+          <association Id="0a0f80e5-70e6-4aed-a46d-702c34a81e85" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Robot" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d4e71548-a8a7-4955-8fa4-03888568825b" LastKnownName="Robot" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e489924f-0075-48c3-ab90-97e7dfab40a0" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="77baf91d-70ab-4409-8b0b-0d823cdeaa48" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="72431016-48a3-4ed3-bd47-e14c1047f0c4" name="Robot" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0e07f57a-47c8-4e60-935c-80c767b14562" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="256577df-8e39-4f2e-8fd3-0fa534e9aaab" />
+          </association>
+          <association Id="b50b7853-2cc0-4513-a1e8-d49e0db078f7" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Specifications" isLeaf="false" isAbstract="false">
+            <classMoniker Id="577cd9ed-3ed1-4d61-a120-e335a7f51064" LastKnownName="Specifications" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="beeeab11-3690-4c37-b56a-30d66346760f" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="614326db-e1a3-4e22-b612-a7beb5ba6a82" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a2577842-f903-4008-881c-7e697aa9a5a3" name="Specifications" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f48420c2-78d5-4f7f-9ff3-19ad9fab506e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2d372b0a-f3ea-4d6d-aa8f-96b3dca9d60e" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="dac42f6f-bd20-448e-8d28-922db694e70b" name="robot" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6c15ac39-af8c-42f0-9354-18dde6378764" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4419a8a6-3686-406d-aabe-0c10867a08ff" LastKnownName="Robot" />
+            </type_NamedElement>
+          </property>
+          <property Id="0e34f14b-cec0-4c9c-b226-2527b2974042" name="weapon" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5b907438-3a46-4e2d-aca7-5bbc05ff22a7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1d42f5ad-5ace-4dd5-a8dc-f1c4345f2616" LastKnownName="Weapon" />
+            </type_NamedElement>
+          </property>
+          <property Id="03674c4b-f110-4b00-9bc2-937f37237c5d" name="specifications" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="163cd995-fa55-4eb1-b3d6-48a646bd78df" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="76da0acf-d4eb-4124-a0e4-64c4b22fc51d" LastKnownName="Specifications" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="0148ae7c-c68c-4001-ae98-d55e73fd1a97" name="displayWeaponSpecifications" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="01394535-83a5-4a5d-9513-8234b31958cc" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="95dab3c2-18fa-4882-b622-6f2d140450bb" direction="Return" isUnique="false">
+                  <elementDefinition Id="fa96dd52-a022-4843-9b65-e3b77034408d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="3630d906-bb7c-4aa0-b349-dbfdc9a6c509" name="displayRobotSpecifications" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ab430408-36a6-416b-b19b-634af061aef3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d980fe58-fe93-4a93-88c7-e93ee7d80e41" direction="Return" isUnique="false">
+                  <elementDefinition Id="0b1357fc-1516-478a-8e5a-ef6d2f1d1360" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="3e6cfddc-3c27-4e74-9d5a-ffcf2aab089b" name="chooseAction" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2d5be9fd-49f0-45b4-b698-bbbd2db81f37" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a22955bb-251a-46f6-a948-83bd4ce40c17" name="robot" direction="In" isUnique="false">
+                  <elementDefinition Id="198cb5ce-007b-4677-8b41-102b5cf802bc" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="46e1cc2e-f3fa-4946-a9b0-440fa7663d37" name="weapon" direction="In" isUnique="false">
+                  <elementDefinition Id="87891de4-cd9e-4c89-bb15-ab53b32a259d" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a7026442-a71d-4f18-9670-08daea868e46" direction="Return" isUnique="false">
+                  <elementDefinition Id="1ed5884e-c0a3-4fcf-af28-dcc9c1eb8551" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="6e1f2b12-3aa8-422a-8131-ae5b3e566bd1" name="chooseWeapon" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3872a26d-2b8f-4776-abcb-74d99907ba05" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="56a0f274-e067-48a6-aa42-de29c0d9e81c" direction="Return" isUnique="false">
+                  <elementDefinition Id="784d681a-bf33-4221-be8e-1fb27602cb69" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="fb78da97-298d-407f-a3ed-0f6c5a51209c" LastKnownName="weapon" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d6639b72-bc00-4619-9c5f-938b9ba9eefa" name="chooseRobot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="65a7143d-f3a7-4a56-88e8-b3735d93bb8d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d1255468-9822-42e5-9129-04ba41675076" direction="Return" isUnique="false">
+                  <elementDefinition Id="4fb7fe82-0a6a-44d7-a58d-ccb0bddfa85f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7b3a1f2f-4b0b-4350-8632-8244c9c24c2b" LastKnownName="robot" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="6fb3abdb-c37c-4f84-b71a-b81e52411b38" name="runGame" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="42c7b0f9-feda-48e9-a098-8df6fe2d53eb" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="822127fe-3f5d-41ec-bf97-a638056d1145" direction="Return" isUnique="false">
+                  <elementDefinition Id="f9d3fe42-cc60-4fdf-99b4-791cda9f2620" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="23d5a270-04c5-4983-9d01-2f5bf89e2ecd" name="User" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0a4d1ae2-fb1e-4cb1-980b-9cdb188688c7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3b677c81-8d5e-48aa-95d4-765b50cf1cff" direction="Return" isUnique="false">
+                  <elementDefinition Id="05c3d2f6-97e8-494d-b72b-ce87e64831c7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="4419a8a6-3686-406d-aabe-0c10867a08ff" name="Robot" isAbstract="false" isLeaf="false" cachedFullName="Robot">
+        <elementDefinition Id="02e08852-eb2f-459d-8821-2416967a82e3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1d42f5ad-5ace-4dd5-a8dc-f1c4345f2616" name="Weapon" isAbstract="false" isLeaf="false" cachedFullName="Weapon">
+        <elementDefinition Id="64137b40-d49d-467c-a4b8-66b81830102d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="76da0acf-d4eb-4124-a0e4-64c4b22fc51d" name="Specifications" isAbstract="false" isLeaf="false" cachedFullName="Specifications">
+        <elementDefinition Id="2f4f2d15-e12e-4d37-8597-e9f479791e82" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d4e71548-a8a7-4955-8fa4-03888568825b" name="Robot" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5f42faa3-4be7-4615-b991-1600563088de" />
+        <ownedAttributesInternal>
+          <property Id="a048e11d-329f-4588-aca9-ad68f370716d" name="name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="96dd9258-d932-447a-ae64-0dfe9a2c96d6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="580f1e8f-af38-4e3d-994b-584d8d6ee0ee" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="a40914c0-61d3-473e-981c-e7890b3a43a0" name="modeOfTransport" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d9aecc5b-228e-4aa8-8425-7ee597d8d90f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="580f1e8f-af38-4e3d-994b-584d8d6ee0ee" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="5120e622-5645-474c-af30-7d53198c417e" name="speed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a7138972-4805-4ea7-8e9c-796a5bf90520" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f4210bbb-2b91-474a-8ae6-832cf1c6436c" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="9e4c333f-a491-424f-9b83-feee125bbccf" name="specialPower" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ab930d83-44fc-4c34-99b5-2d9d583bbce1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="580f1e8f-af38-4e3d-994b-584d8d6ee0ee" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="8d3c72c5-2820-4189-aa9a-15fbb8a8a6db" name="numberOfAppendages" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cea3b177-554d-471c-aac1-e7e9e2e7c3b9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f4210bbb-2b91-474a-8ae6-832cf1c6436c" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="30cf4f12-11e1-4ba1-9611-0d88ea7e7167" name="displaySpecifications" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3c57ad40-a8ab-42d7-ab3b-36e78f3aa7b9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d9401687-d778-447f-8a3b-ae4272761ffd" direction="Return" isUnique="false">
+                  <elementDefinition Id="91c26b70-bbce-4fe9-8c39-afb363b18d2c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="7cd3f306-afa6-4a23-84a1-bf3895c438ee" name="moveRobot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="31e3430a-d9aa-4f8e-81a6-2cf99702482a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d3a44461-7a89-442b-b02c-72644d4b73df" direction="Return" isUnique="false">
+                  <elementDefinition Id="11044e52-a870-4366-90a1-5cb2696d1d1e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="4a816d07-6540-470f-8f5c-82a78acffb51" name="displayName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7d80f1d0-c22a-4c7f-ac1e-bf2a646327a8" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="55c6ac6c-ef6d-4cb1-b7e9-0767f6a4d591" direction="Return" isUnique="false">
+                  <elementDefinition Id="40cc94aa-a65c-4875-97db-1879d504a854" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="580f1e8f-af38-4e3d-994b-584d8d6ee0ee" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ed541f4a-af4e-4618-8cd6-3ddc135df3d0" name="Robot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7cb5994c-cc93-46fe-a756-877d2de57ea9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="de67ae5c-7b7d-4f4f-86da-d53cb78e0ba5" direction="Return" isUnique="false">
+                  <elementDefinition Id="d3a2552f-56ec-40fb-ae43-623defe2438a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="580f1e8f-af38-4e3d-994b-584d8d6ee0ee" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="a7cfa935-69f3-4ec4-a792-1810db5f49cc" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f4210bbb-2b91-474a-8ae6-832cf1c6436c" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="0617dedd-0d11-424f-bae7-4602b5770dd7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c0945fae-fce7-433d-a987-c680099a1b6d" name="Weapon" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3965a5cc-7597-4e32-aca7-10eab46955bf" />
+        <ownedAttributesInternal>
+          <property Id="fd523e26-43e2-4d0c-9597-38b268744d0f" name="name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="97d04eb4-769b-45bb-80c2-7c59e089911a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="580f1e8f-af38-4e3d-994b-584d8d6ee0ee" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="0d3c678c-bf64-4e38-92a7-2894bfa7e455" name="weaponRange" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f647eb69-07d9-42ec-b448-7da7903fd8dd" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f4210bbb-2b91-474a-8ae6-832cf1c6436c" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="030c221a-b041-49ab-bb95-db22161f072d" name="weaponStrength" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4bf097ab-ef3f-4b51-879e-34ac25250430" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f4210bbb-2b91-474a-8ae6-832cf1c6436c" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="833dc3ce-a2cd-4b9a-9a33-1c5f23441131" name="weaponSound" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="783dfcf4-31ea-4582-a47b-227c0764ed06" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="580f1e8f-af38-4e3d-994b-584d8d6ee0ee" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="6d549a61-eba5-4272-b866-332530180607" name="displaySpecifications" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e52f3eca-1dbd-40ee-a572-63035a664012" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="aaf6d970-a31e-4e65-b0d8-f075565daeb9" direction="Return" isUnique="false">
+                  <elementDefinition Id="a4e07e59-39cb-444b-afa5-69bce3a68049" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f85bce88-5aae-4e76-b3db-1e0e91d88ec6" name="dischargeWeapon" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dd417aa6-f11d-4019-a991-7878daadd16f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="af2adb70-bc9b-4981-93e9-f8f6fe705124" name="weapon" direction="In" isUnique="false">
+                  <elementDefinition Id="54212643-ff37-4ef6-976a-8532301c35cb" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8d8a7965-4a60-403b-8a7c-4295bc17fd0e" direction="Return" isUnique="false">
+                  <elementDefinition Id="8a26e703-a178-464d-93e7-c48ff51c363b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d24ab843-fd24-40cc-bb77-d42c1f68714a" name="displayName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7dce876b-fbfd-4a3d-b6ad-ec7119998f17" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="878c7cef-7db0-41c7-891c-0ecf682a7f1d" direction="Return" isUnique="false">
+                  <elementDefinition Id="0266d808-5437-47a2-8495-a659b92b0dda" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="580f1e8f-af38-4e3d-994b-584d8d6ee0ee" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b1b8e404-64d7-4cc3-9c78-ed31fc70f2fb" name="SwimmingRobot" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="78386cf6-2de0-4a7f-891e-aaa142c9d840" />
+        <generalsInternal>
+          <generalization Id="5646becb-026d-4f99-b734-7c93830e8514" isSubstitutable="false">
+            <classMoniker Id="d4e71548-a8a7-4955-8fa4-03888568825b" LastKnownName="Robot" />
+            <elementDefinition Id="1c397ecc-3cbd-46d5-b5d3-4f643c22a0d6" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="266aad3c-55c7-48d2-9354-9845ec720ff6" name="Swimmingrobot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="18449fe4-25fd-4ff8-b79c-084bdfdb5c08" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6c7e4757-f809-4950-8f7d-cae9d4840959" direction="Return" isUnique="false">
+                  <elementDefinition Id="ee8920ed-ed43-4d9d-87c5-1036a33037b6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="893a188a-6135-49ea-9e00-07b0c1b30af8" name="FlyingRobot" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="39fa1e45-bbfd-4de3-bd25-a0bd56677c57" />
+        <generalsInternal>
+          <generalization Id="9052bea0-9dc8-4878-9078-cd95981e0b96" isSubstitutable="false">
+            <classMoniker Id="d4e71548-a8a7-4955-8fa4-03888568825b" LastKnownName="Robot" />
+            <elementDefinition Id="00b14ea9-8d18-4757-867f-ce44816b4c6d" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="295b5d03-2f9e-4348-ad65-6d7b162f2029" name="FlyingRobot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="db52640e-6b14-495c-b59d-796b2f234f74" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2463bc07-07c8-4627-bdd1-a720474e01f9" direction="Return" isUnique="false">
+                  <elementDefinition Id="e40a140b-6002-43f7-8a4c-595fd20754db" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c9aa9b90-936c-4c89-9d4a-f147875678bd" name="WalkingRobot" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cb198388-a759-48ba-82fe-cee090e725e6" />
+        <generalsInternal>
+          <generalization Id="2614493f-110c-44ca-9529-4dcf19e84e0c" isSubstitutable="false">
+            <classMoniker Id="d4e71548-a8a7-4955-8fa4-03888568825b" LastKnownName="Robot" />
+            <elementDefinition Id="3b5e1a8d-c018-420a-8d56-4b210abedd25" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="31fb68b2-a74c-4946-b136-0c7597c7af3f" name="WalkingRobot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a959419f-57da-45b3-8dde-b660e6a9c98f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3af70f90-aa95-4d66-bfd3-67a99c39cbe4" direction="Return" isUnique="false">
+                  <elementDefinition Id="c5090a2f-682a-4857-9022-7ecab2d2cafb" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="b7fc04d4-f0d1-41f0-b0ad-62de81de765a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7b3a1f2f-4b0b-4350-8632-8244c9c24c2b" name="robot" isAbstract="false" isLeaf="false" cachedFullName="robot">
+        <elementDefinition Id="64575c15-b99e-4e4a-a1e2-4979ea3c410d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="fb78da97-298d-407f-a3ed-0f6c5a51209c" name="weapon" isAbstract="false" isLeaf="false" cachedFullName="weapon">
+        <elementDefinition Id="c0c64dc2-6cef-4331-8d16-5971d7dfdcce" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="71d46c8c-574d-40d4-8103-7d4d127b6ab9" name="RollingRobot" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="60027bb1-784b-4688-8f68-3dcff2f265b8" />
+        <generalsInternal>
+          <generalization Id="69c9b783-bc89-499a-868d-77866f0f3bff" isSubstitutable="false">
+            <classMoniker Id="d4e71548-a8a7-4955-8fa4-03888568825b" LastKnownName="Robot" />
+            <elementDefinition Id="62f4982e-e8f8-4af1-9f13-e66c8d075184" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="82fa8304-93b0-4024-911c-8320b35e6403" name="RollingRobot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="71d798e8-61a7-4a8f-a002-6546c99cf490" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="13531f3a-b5cf-4c98-b7e4-a7f41f078513" direction="Return" isUnique="false">
+                  <elementDefinition Id="228abb52-b381-4bc3-a837-e45a950d255d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a4764c61-b0ce-4321-8071-96ba58642601" name="AcidHose" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="66a1650a-a45c-48b7-a028-a868b1fee130" />
+        <generalsInternal>
+          <generalization Id="d7a73b13-59b2-4522-a8be-bfc86f4b1fa1" isSubstitutable="false">
+            <classMoniker Id="c0945fae-fce7-433d-a987-c680099a1b6d" LastKnownName="Weapon" />
+            <elementDefinition Id="eb6e6530-6443-42fc-be7d-8d231bd4aaac" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="ed0c81a4-b45f-4bfd-b8ba-4d77af14594d" name="AcidHose" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="59465b71-f03c-475e-a0d6-426fc1cf9d03" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0ba2f2ef-6df8-4dd5-9f31-6333bfe899d3" direction="Return" isUnique="false">
+                  <elementDefinition Id="a3f521a7-5abc-41d9-94e4-bf5e4b724e77" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2529bb7b-21fb-42a7-bc3a-890083b5f822" name="PlasmaWhip" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="aecc81b1-322a-49f8-91ee-f643ed2ae833" />
+        <generalsInternal>
+          <generalization Id="7ba42438-d61d-4a00-a2d4-04cae8d885ed" isSubstitutable="false">
+            <classMoniker Id="c0945fae-fce7-433d-a987-c680099a1b6d" LastKnownName="Weapon" />
+            <elementDefinition Id="d45e19ec-619e-4fee-8c77-36a984504d70" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="35dd7412-dac7-468e-b36e-7e1ddd1f48ab" name="PlasmaWhip" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6ac3e5b4-f7e2-4c94-b3ce-eb9914fb9540" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4be9adf6-bb37-4390-be33-1595a0dedc8e" direction="Return" isUnique="false">
+                  <elementDefinition Id="9540e5d3-e915-47e7-a6b2-6a4072c516e9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f1b7bf60-f325-4172-a516-83884785ae00" name="LaserGun" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9bdf5a72-adb3-499b-83a8-c1ccd866ed43" />
+        <generalsInternal>
+          <generalization Id="9e686aa9-cc95-4a5c-b734-94fe1d14827f" isSubstitutable="false">
+            <classMoniker Id="c0945fae-fce7-433d-a987-c680099a1b6d" LastKnownName="Weapon" />
+            <elementDefinition Id="dfad030b-82b9-4097-a459-bffc6c3a9728" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="6ab4f494-1ee5-4cff-a76c-47b090d7c417" name="LaserGun" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b0ff63dc-3a79-4e89-ba69-6137c5447ed9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4be61b93-3539-4734-990a-f391921babd4" direction="Return" isUnique="false">
+                  <elementDefinition Id="fa10b48e-12c1-4c89-8c02-f2462a7d8447" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="58dbae8b-06db-4b84-9ae2-217f66047828" name="ProtonQuadCannon" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cf1dfd84-45d7-4b4d-a273-e98bafe27c64" />
+        <generalsInternal>
+          <generalization Id="166aa8a5-8e03-45fa-b662-2e2286d2ce81" isSubstitutable="false">
+            <classMoniker Id="c0945fae-fce7-433d-a987-c680099a1b6d" LastKnownName="Weapon" />
+            <elementDefinition Id="7316a57f-f939-40a0-b71f-f573b3a192b3" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="7fd8cef7-16dc-4ca6-a64e-86818a402d7d" name="ProtonQuadCannon" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2f304b30-9038-479d-afb7-b444e825dc76" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="577cd9ed-3ed1-4d61-a120-e335a7f51064" name="Specifications" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5e0715a2-d34b-46a5-bc33-0e22f022155e" />
+        <targetEnds>
+          <association Id="d82e4acd-18e3-4401-ae68-d191463972bd" isDerived="false" sourceEndRoleName="Specifications" targetEndRoleName="RollingRobot" isLeaf="false" isAbstract="false">
+            <classMoniker Id="71d46c8c-574d-40d4-8103-7d4d127b6ab9" LastKnownName="RollingRobot" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9df6255e-3b2a-43ed-ad25-af7d8936a871" name="Specifications" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2c2055a4-9be5-4755-8e8f-799d5621a54f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b903f5ea-0116-4aea-b491-70380afb6780" name="RollingRobot" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="307cbc44-97e2-440f-8614-93eec7eaa113" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1dc611a7-78d7-4a5c-9880-e4e9189ef711" />
+          </association>
+          <association Id="311a26bc-e5a0-48f8-9f3e-3a9aa08c38bf" isDerived="false" sourceEndRoleName="Specifications" targetEndRoleName="SwimmingRobot" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b1b8e404-64d7-4cc3-9c78-ed31fc70f2fb" LastKnownName="SwimmingRobot" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="865be9f4-3ef5-45d2-a6cf-a2b4e191f322" name="Specifications" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0b996559-1abc-4362-9e9b-c51d9452e6ca" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3e3fa521-b44d-4a7d-9f14-0c54341ecd89" name="SwimmingRobot" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d4ce2fee-267d-4b18-ac3d-0ab73697581b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9d456cdb-2abf-4212-af3b-f6b01428a8c3" />
+          </association>
+          <association Id="04818a5f-4857-4bda-b727-999f197c049b" isDerived="false" sourceEndRoleName="Specifications" targetEndRoleName="FlyingRobot" isLeaf="false" isAbstract="false">
+            <classMoniker Id="893a188a-6135-49ea-9e00-07b0c1b30af8" LastKnownName="FlyingRobot" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="023b93ca-92eb-4a35-871d-ed0875ab1053" name="Specifications" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d20b033e-c84e-4dcb-9e3d-515503313013" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="601134f1-71a1-40f6-85b6-87f934dfd894" name="FlyingRobot" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="eff17f20-e715-4c68-9dd5-34f4f5228555" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b9d2fb0d-59fa-43bc-9181-9a6b899adde4" />
+          </association>
+          <association Id="182b916a-692e-4c76-82c5-602eae3781a9" isDerived="false" sourceEndRoleName="Specifications" targetEndRoleName="WalkingRobot" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c9aa9b90-936c-4c89-9d4a-f147875678bd" LastKnownName="WalkingRobot" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b99a92dd-0511-4d50-8c58-368e073ce5f1" name="Specifications" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cb4d44c6-a465-4535-9c31-c5fd4e4583d7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fcb2144e-6427-41a0-8bec-bf852f7f2b0a" name="WalkingRobot" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a9c87353-2641-4772-9e92-d22da6a23682" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="186f3f95-1401-4719-98d2-a0216e478e46" />
+          </association>
+          <association Id="7f2e9712-f759-4425-ba94-f7c93c0afc63" isDerived="false" sourceEndRoleName="Specifications" targetEndRoleName="AcidHose" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a4764c61-b0ce-4321-8071-96ba58642601" LastKnownName="AcidHose" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4be3d3d0-165d-4876-ba93-0cdd45ee8f6e" name="Specifications" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2afedf5f-88fc-4d26-af4f-36453acd4cf5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ea362fbe-1a79-4308-8f1b-69bfb8b04394" name="AcidHose" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="be1bd233-4a51-477b-adb5-6f2821d477c3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0bd53be9-1cb9-4f7c-a080-dbde9af37baf" />
+          </association>
+          <association Id="632ff96d-ac96-4cbb-981a-a672d4c9d204" isDerived="false" sourceEndRoleName="Specifications" targetEndRoleName="ProtonQuadCannon" isLeaf="false" isAbstract="false">
+            <classMoniker Id="58dbae8b-06db-4b84-9ae2-217f66047828" LastKnownName="ProtonQuadCannon" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7696aed7-f2a6-4565-8fb9-24b346bbbbed" name="Specifications" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4489cdd0-1dda-432a-9890-289630aee397" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="14623ab5-d167-4ce9-b5e6-931fafe6231f" name="ProtonQuadCannon" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="06e61880-bd26-4a46-9062-64fd8aaf5b60" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7cbe1fd2-61da-4940-91c4-53202a24740c" />
+          </association>
+          <association Id="38935f0f-dfe9-4cdd-8053-699720c9d57e" isDerived="false" sourceEndRoleName="Specifications" targetEndRoleName="PlasmaWhip" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2529bb7b-21fb-42a7-bc3a-890083b5f822" LastKnownName="PlasmaWhip" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3086190c-5f8e-40b1-b88a-7158d1ae87f0" name="Specifications" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f1c0c308-8dbf-43a1-91dc-9197cff240bd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2469ea7c-db2f-4bc1-9150-cfbfcc6da072" name="PlasmaWhip" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="62a6e7c6-5167-4c52-9f48-d46e9ecb8932" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4e5ad02c-eac7-4772-a1ca-3c55580f3592" />
+          </association>
+          <association Id="c7fbc8ac-98a2-4c66-b037-1152af972fc0" isDerived="false" sourceEndRoleName="Specifications" targetEndRoleName="LaserGun" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f1b7bf60-f325-4172-a516-83884785ae00" LastKnownName="LaserGun" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="96d40eb2-9dbd-4bc8-bdcd-602508c22191" name="Specifications" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="173b16bd-ac04-4896-9d97-09026d5bff3e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ab231d74-49a0-442d-8246-cf0eb16c3aa5" name="LaserGun" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d0eae7a4-5cfb-4382-87a0-5eb6d93177b6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f532e970-830e-4758-b890-fb467d0f1767" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="bb537885-95f8-4e2f-9939-83b5552c3b8b" name="robotList" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c5f9879e-534f-43ba-943e-8e8ce2b689ef" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="47b860ea-7b07-42db-916f-f7361740c163" LastKnownName="List&lt;Robot&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="85404592-88dd-4ebb-8846-919e63058a37" name="weaponList" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e04214db-25ac-4dde-925a-240b9b21c335" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="87d587d5-f7ba-4d44-99c4-fa44eb168816" LastKnownName="List&lt;Weapon&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="734435ad-5b5a-4250-8cef-e6e7a5d5d18b" name="flyingRobot" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4418d642-c6bf-4d49-84b6-144e44637c3a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b1265fad-4924-419c-b360-eead4f19d23a" LastKnownName="FlyingRobot" />
+            </type_NamedElement>
+          </property>
+          <property Id="b083c847-23ba-470d-8731-5a092871874a" name="swimmingRobot" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="21540c8c-c9b1-4251-b909-3b52e7e9df3d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="feb8b948-801d-4763-a2c3-0e6d2d1cdb00" LastKnownName="SwimmingRobot" />
+            </type_NamedElement>
+          </property>
+          <property Id="76364192-cb44-4b57-902c-d09f9aaf8169" name="rollingRobot" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dd7956c9-e0be-4174-b0a3-7fe980d7c271" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="fd651d97-ef79-4c66-913f-a536e8d9f090" LastKnownName="RollingRobot" />
+            </type_NamedElement>
+          </property>
+          <property Id="cc4279b6-892d-4360-add2-6788a03a2ba8" name="walkingRobot" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fb372e87-fe5c-4269-bc3a-20e470fdf9dc" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c5243df4-3338-409f-a554-03a2be8edca1" LastKnownName="WalkingRobot" />
+            </type_NamedElement>
+          </property>
+          <property Id="794b59dd-ae59-4a7c-81ef-fd03b6bf15c1" name="acidHose" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="84dddb38-207d-48f8-aa0d-46547165054e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f626b2da-884c-44f5-9d17-70bb167ffa52" LastKnownName="AcidHose" />
+            </type_NamedElement>
+          </property>
+          <property Id="8a0892b6-7b85-48d6-b2ad-c0d6f8e26847" name="laserGun" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bcfd2e28-de72-4e93-90a1-aee7f1df647f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9631deee-48e8-48be-84e6-f1ba034d3cdd" LastKnownName="LaserGun" />
+            </type_NamedElement>
+          </property>
+          <property Id="6b8838ba-1bbc-4113-a8d0-f4c24c4b6938" name="plasmaWhip" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2023718b-8fb4-46b4-ab64-6300871aaa99" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7c81a578-c849-46dc-9696-af6a63bc1136" LastKnownName="PlasmaWhip" />
+            </type_NamedElement>
+          </property>
+          <property Id="405223cc-3e0f-4fcf-98a2-2ccbaacf254e" name="protonQuadCannon" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8c12f38a-c4ad-4787-b245-77a9f5eca6c1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80fa7c24-f347-4237-98c3-3cfb4401fbf3" LastKnownName="ProtonQuadCannon" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="52770c5f-0abf-4c37-89be-890f66e63678" name="Specifications" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c431048f-0040-4240-b72d-4ce355fd6abc" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5d794672-e0fb-41bb-a144-6d23981d6ac2" direction="Return" isUnique="false">
+                  <elementDefinition Id="ce4c9ee8-c883-4147-ad9c-ac6ad32690ca" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="68801aad-6ff4-4a7b-8f0e-bb065cf64f4e" name="addtoWeaponList" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4150c477-5de0-41a6-be5e-3c61788c5347" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cc26a04d-6d22-4fe2-9418-4bff4fa98f5c" direction="Return" isUnique="false">
+                  <elementDefinition Id="15f32892-e4fc-4c4a-8597-eadb074c35e2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="8c27f8e8-0aa2-4753-8bf7-449e26e260ae" name="addToRobotList" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a3870fc1-00d3-4174-8368-32d2cf8d04c6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="45800ce2-8d69-4743-aa10-baf6d0eab577" direction="Return" isUnique="false">
+                  <elementDefinition Id="1189c614-345e-45a5-985f-ec3568315424" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5342ffab-5de5-47ec-8d62-2d8d7d384836" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="47b860ea-7b07-42db-916f-f7361740c163" name="List&lt;Robot&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Robot&gt;">
+        <elementDefinition Id="7e39009d-c096-4500-be32-df5748c8a5a0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="87d587d5-f7ba-4d44-99c4-fa44eb168816" name="List&lt;Weapon&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Weapon&gt;">
+        <elementDefinition Id="f5fc4c99-7d2b-4276-ab22-7790158ed293" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="fd651d97-ef79-4c66-913f-a536e8d9f090" name="RollingRobot" isAbstract="false" isLeaf="false" cachedFullName="RobotsClassDiagram::RollingRobot">
+        <elementDefinition Id="60027bb1-784b-4688-8f68-3dcff2f265b8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c5243df4-3338-409f-a554-03a2be8edca1" name="WalkingRobot" isAbstract="false" isLeaf="false" cachedFullName="RobotsClassDiagram::WalkingRobot">
+        <elementDefinition Id="cb198388-a759-48ba-82fe-cee090e725e6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="feb8b948-801d-4763-a2c3-0e6d2d1cdb00" name="SwimmingRobot" isAbstract="false" isLeaf="false" cachedFullName="RobotsClassDiagram::SwimmingRobot">
+        <elementDefinition Id="78386cf6-2de0-4a7f-891e-aaa142c9d840" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b1265fad-4924-419c-b360-eead4f19d23a" name="FlyingRobot" isAbstract="false" isLeaf="false" cachedFullName="RobotsClassDiagram::FlyingRobot">
+        <elementDefinition Id="39fa1e45-bbfd-4de3-bd25-a0bd56677c57" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f626b2da-884c-44f5-9d17-70bb167ffa52" name="AcidHose" isAbstract="false" isLeaf="false" cachedFullName="RobotsClassDiagram::AcidHose">
+        <elementDefinition Id="66a1650a-a45c-48b7-a028-a868b1fee130" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9631deee-48e8-48be-84e6-f1ba034d3cdd" name="LaserGun" isAbstract="false" isLeaf="false" cachedFullName="RobotsClassDiagram::LaserGun">
+        <elementDefinition Id="9bdf5a72-adb3-499b-83a8-c1ccd866ed43" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7c81a578-c849-46dc-9696-af6a63bc1136" name="PlasmaWhip" isAbstract="false" isLeaf="false" cachedFullName="RobotsClassDiagram::PlasmaWhip">
+        <elementDefinition Id="aecc81b1-322a-49f8-91ee-f643ed2ae833" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="80fa7c24-f347-4237-98c3-3cfb4401fbf3" name="ProtonQuadCannon" isAbstract="false" isLeaf="false" cachedFullName="RobotsClassDiagram::ProtonQuadCannon">
+        <elementDefinition Id="cf1dfd84-45d7-4b4d-a273-e98bafe27c64" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="271df01b-bbb3-431f-a071-cbb102bde373" name="RobotsClassDiagram">
+    <elementDefinition Id="e251920f-61ab-4c45-aa9d-0ac1b8b17056" />
+  </package>
+</logicalClassDesignerModel>
